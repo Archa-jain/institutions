@@ -1,0 +1,89 @@
+<div class = "scroll">
+  <div class="search-filter">
+
+
+    <mat-form-field class="search-alignment" appearance="outline">
+      <mat-label> Search </mat-label>
+      <input matInput (keyup)="applySearch($event.target.value)">
+    </mat-form-field>
+
+    <mat-form-field class="search-alignment" appearance="outline">
+      <mat-label>Province</mat-label>
+      <mat-select (selectionChange)="applyProvinceSearch($event)">
+        <mat-option [value]="">None</mat-option>
+        <mat-option *ngFor="let province of provinces" [value]="province?.name">{{ province?.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="search-alignment" appearance="outline">
+      <mat-label>City</mat-label>
+      <mat-select (selectionChange)="applyCitySearch($event)">
+        <mat-option [value]="">None</mat-option>
+        <mat-option *ngFor="let city of cities" [value]="city?.name">{{ city?.name }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  <!-- </form> -->
+
+    <button mat-raised-button color="primary" class="button-alignment" (click) = "redirectToNewInstitution()">
+      New Institution
+    </button>
+  </div>
+
+  <div class="container mat-elevation-z8">
+
+    <mat-table [dataSource]="dataSource" matSort>
+
+      <!-- Institution Column -->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Institution </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+
+      <!-- City Column -->
+      <ng-container matColumnDef="city">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> City </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.city}} </mat-cell>
+      </ng-container>
+
+      <!-- Province Column -->
+      <ng-container matColumnDef="province">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Province </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.province}} </mat-cell>
+      </ng-container>
+
+      <!-- Sector Column -->
+      <ng-container matColumnDef="sector">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Sector </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.sector}} </mat-cell>
+      </ng-container>
+
+      <!-- Legal Status Column -->
+      <ng-container matColumnDef="legalStatus">
+        <mat-header-cell *matHeaderCellDef mat-sort-header> Legal Status </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.legalStatus}} </mat-cell>
+      </ng-container>
+
+      <!-- Action Column -->
+      <ng-container matColumnDef="action">
+        <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <button mat-icon-button (click)="editInstitution(row)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteInstitution(row)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;">
+      </mat-row>
+    </mat-table>
+
+    <div class="no-record" *ngIf="dataSource.filteredData.length === 0">No records found</div>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+</div>

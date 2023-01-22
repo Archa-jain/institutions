@@ -1,0 +1,14 @@
+<div align="center">
+  <h1 mat-dialog-title>
+    Confirmation
+  </h1>
+
+  <div mat-dialog-content>
+    <p>Do you really want to delete this user?</p>
+  </div>
+
+  <div mat-dialog-actions align="center">
+    <button mat-button (click)="onDismiss()">No</button>
+    <button mat-raised-button color="primary" (click)="onConfirm()">Yes</button>
+  </div>
+</div>
