@@ -17,8 +17,8 @@
   },
   {
     "name": "third",
-    "city": "Boissevain",
-    "province": "Manitoba",
+    "city": "Abbotsford",
+    "province": "British Columbia",
     "sector": "For-Profit",
     "legalStatus": "Recognized",
     "id": "6ea27b72-e65e-4ace-80d1-a54088266e34"
@@ -102,5 +102,13 @@
     "sector": "For-Profit",
     "legalStatus": "Recognized",
     "id": "36c972c4-4bb1-40d5-8a74-ab7b71f62a6a"
+  },
+  {
+    "name": "Final institution",
+    "city": "Aldergrove",
+    "province": "British Columbia",
+    "sector": "For-Profit",
+    "legalStatus": "Recognized",
+    "id": "faa4d605-1a93-4fc3-ab75-f093a4a28225"
   }
 ]

@@ -59,8 +59,8 @@ export class InstitutionsService {
 
   public getInstitution(id: string){
     const subject = new Subject<InstitutionData|undefined>();
-    let institution;
-    if(this.institutionList && this.institutionList.length == 0 ){
+    let institution: InstitutionData|undefined;
+    if(this.institutionList.length == 0 ){
       try{
         // Returning Observable data
         this.subscriptions.add(this.getinstitutions().subscribe(institutions => {
@@ -77,7 +77,9 @@ export class InstitutionsService {
     }
     else {
       institution = this.institutionList.find(institution => institution.id === id);
-      subject.next(institution);
+      setTimeout(()=>{
+        subject.next(institution);
+      })
     }
 
     return subject.asObservable();
