@@ -1,0 +1,40 @@
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-element {
+  padding: 5px 0px 5px 2px;
+  width: 100%;
+}
+
+.button {
+  margin: 20px;
+}
+
+.alignment{
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+}
+
+.width-adjustment{
+  width: 50%;
+}
+
+.form-checkbox{
+  margin: 10px;
+}
