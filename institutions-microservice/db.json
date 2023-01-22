@@ -1,0 +1,106 @@
+[
+  {
+    "name": "first institutions",
+    "city": "Airdrie",
+    "province": "Alberta",
+    "sector": "Public",
+    "legalStatus": "Registered",
+    "id": "20f2a7b0-adf5-4a4b-a998-22b53cdd5a74"
+  },
+  {
+    "name": "second",
+    "city": "Agassiz",
+    "province": "British Columbia",
+    "sector": "Public",
+    "legalStatus": "Authorized",
+    "id": "41e960f3-20cf-4500-b5b2-3e1cdec61066"
+  },
+  {
+    "name": "third",
+    "city": "Boissevain",
+    "province": "Manitoba",
+    "sector": "For-Profit",
+    "legalStatus": "Recognized",
+    "id": "6ea27b72-e65e-4ace-80d1-a54088266e34"
+  },
+  {
+    "name": "fourth",
+    "city": "Bathurst",
+    "province": "New Brunswick",
+    "sector": "Public",
+    "legalStatus": "Recognized",
+    "id": "7d5723bd-1d3e-4b7e-b4f0-fbffaf8b1c2e"
+  },
+  {
+    "name": "fifth",
+    "city": "Bonavista",
+    "province": "Newfoundland and Labrador",
+    "sector": "For-Profit",
+    "legalStatus": "Authorized",
+    "id": "c0ae0ae8-0299-47e7-8aec-aaa717860a9f"
+  },
+  {
+    "name": "sixth",
+    "city": "Fort McPherson",
+    "province": "Northwest Territories",
+    "sector": "For-Profit",
+    "legalStatus": "Recognized",
+    "id": "6f07c75b-83ff-4010-9fa5-ed59aef6e3ae"
+  },
+  {
+    "name": "seventh",
+    "city": "Antigonish",
+    "province": "Nova Scotia",
+    "sector": "For-Profit",
+    "legalStatus": "Recognized",
+    "id": "83353cea-1de7-4e28-b33e-4188a76ce23c"
+  },
+  {
+    "name": "eighth",
+    "city": "Iqaluit",
+    "province": "Nunavut",
+    "sector": "For-Profit",
+    "legalStatus": "Recognized",
+    "id": "d9678ce2-44bb-4da1-98da-1dce68a9934a"
+  },
+  {
+    "name": "ninth",
+    "city": "Amherstburg",
+    "province": "Ontario",
+    "sector": "Public",
+    "legalStatus": "Registered",
+    "id": "55d86bdd-6b30-4237-abb5-98aa686fb6fb"
+  },
+  {
+    "name": "second",
+    "city": "Airdrie",
+    "province": "Alberta",
+    "sector": "Public",
+    "legalStatus": "Registered",
+    "id": "b7388152-3f0e-4e4c-b6f9-be5618692f62"
+  },
+  {
+    "name": "thirf",
+    "city": "Airdrie",
+    "province": "Alberta",
+    "sector": "Public",
+    "legalStatus": "Registered",
+    "id": "765cefbc-d579-4a66-b6b6-79f94b76cdce"
+  },
+  {
+    "name": "First",
+    "city": "Athabasca",
+    "province": "Alberta",
+    "sector": "Public",
+    "legalStatus": "Recognized",
+    "id": "bb7d4aeb-2c46-4298-a23d-42454cc86768"
+  },
+  {
+    "name": "last",
+    "city": "Aldergrove East",
+    "province": "British Columbia",
+    "sector": "For-Profit",
+    "legalStatus": "Recognized",
+    "id": "36c972c4-4bb1-40d5-8a74-ab7b71f62a6a"
+  }
+]
